@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-size: 24px;
+        }
+        table {
+            border-collapse:collapse;
+        }
+        th, td {
+            border: 1px solid black;
+        }
+        th {
+            text-align: center;
+        }
+        th:nth-child(1), td:nth-child(1) {
+            background-color:bisque;
+        }
+        th:nth-child(2), td:nth-child(2) {
+            background-color:azure;
+        }
+        th:nth-child(3), td:nth-child(3) {
+            background-color: beige;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+          <tr><!-- <tr> table row строка в таблице-->
+            <th>Название услуги</th> <!--table head заголовок-->
+            <th>Стоимость</th>
+            <th>Доступное количество полисов</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Страхование путешествий</td>
+            <td>1000 руб.</td>
+            <td>150</td>
+          <tr>
+            <td>Автомобильное страхование</td> <!--table data-->
+            <td rowspan="2">1500 руб.</td>
+            <td>500</td>
+          </tr>
+          <tr>
+            <td>Жилищное страхование</td>
+            <td style="background-color:beige;">300</td>
+          </tr>
+          <tr>
+            <td>Медицинское страхование</td>
+            <td>2000 руб.</td>
+            <td>200</td>
+          </tr>
+        </tbody>
+      </table>
+      <br><a href="page1.html#end">Назад</a>
+</body>
+</html>
