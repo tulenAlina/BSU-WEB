@@ -1,0 +1,8 @@
+окт. 29, 2024 6:41:29 PM database.CarDAO addCar
+INFO: Автомобиль добавлен: Car{id=14, model='Ford 093A038', licensePlate='0938A90', status='available'}
+окт. 29, 2024 6:42:15 PM database.RequestDAO addRequest
+INFO: Заявка добавлена: Request{id=11, client=Client{id=3, name='Сергей Сидоров', passportData='1122334455'}, car=Car{id=1, model='Toyota Camry', licensePlate='A123BC', status='available'}, rentalPeriod=6}
+окт. 29, 2024 6:42:15 PM database.CarDAO updateCarStatus
+INFO: Статус автомобиля изменён: Car{id=1, model='Toyota Camry', licensePlate='A123BC', status='rented'}
+окт. 29, 2024 6:42:28 PM database.CarDAO updateCarStatus
+INFO: Статус автомобиля изменён: Car{id=1, model='Toyota Camry', licensePlate='A123BC', status='available'}

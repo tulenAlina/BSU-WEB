@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence xmlns="https://jakarta.ee/xml/ns/persistence"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="https://jakarta.ee/xml/ns/persistence
+        https://jakarta.ee/xml/ns/persistence/persistence_3_0.xsd" version="3.0">
+  <persistence-unit name="CarRentalPU" 
+            transaction-type="RESOURCE_LOCAL">
+    <provider>
+      org.eclipse.persistence.jpa.PersistenceProvider
+    </provider>
+    <class>Entities.Car</class>
+    <class>Entities.Client</class>
+    <class>Entities.Order</class>
+    <class>Entities.Request</class>
+    <exclude-unlisted-classes>true</exclude-unlisted-classes>
+    <properties>
+        <property name="jakarta.persistence.jdbc.url" 
+             value="jdbc:sqlserver://localhost:49672;databaseName=car_rental_system;trustServerCertificate=true"/>
+        <property name="jakarta.persistence.jdbc.user" value="sa"/>
+        <property name="jakarta.persistence.jdbc.password" value="220105"/>  
+        <property name="eclipselink.ddl-generation" value="create-tables"/>  
+        <property name="eclipselink.jpa.metamodel.generation" value="true"/>  <!-- Добавлено для поддержки метамоделей -->
+    </properties>
+  </persistence-unit>
+</persistence>
