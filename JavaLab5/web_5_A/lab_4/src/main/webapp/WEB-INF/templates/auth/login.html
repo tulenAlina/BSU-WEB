@@ -1,0 +1,111 @@
+<html>
+<head>
+    <title>Authentication</title>
+    <meta charset="UTF-8">
+    <style>
+ul {
+  list-style-type: none;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e9ecef;
+}
+
+h1 {
+    color: #343a40;
+    text-align: center;
+    margin-top: 20px;
+}
+
+p {
+    margin: 15px 0;
+    padding-left: 10px;
+    text-align: center;
+}
+
+a {
+    margin: 15px 0;
+    padding-left: 10px;
+    text-align: center;
+}
+
+nav {
+    margin: 30px 0;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 30px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #007bff;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #0056b3;
+}
+
+button {
+    display: block;         /* Делает кнопку блочным элементом */
+    margin: 10px auto;         /* Центрирует кнопку по горизонтали */
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    text-align: center;
+}
+
+ button:hover {
+    background-color: #0056b3;
+}
+
+ button:active {
+    transform: scale(0.95);
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #6c757d;
+}
+form {
+     margin: 20px auto;
+     display: block;
+     text-align: center;
+ }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Login page</h1>
+</header>
+<section>
+    <form action="auth" method="post">
+        <h2>Authentication</h2>
+        <input type="text" name="username" placeholder="Login">
+        <input type="password" name="password" placeholder="Password">
+        <button type="submit">Login</button>
+        <p th:if="${errorMessage}" th:text="${errorMessage}" style="color: red;"></p>
+        <p>Register instead  <a href="registerPage">Register</a></p>
+        <p><a href="../home" th:href="@{/}">Return to homepage</a></p>
+    </form>
+</section>
+</body>
+</html>
