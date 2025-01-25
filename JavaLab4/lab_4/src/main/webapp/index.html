@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title th:text="#{index.title}">Welcome to our system</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+<body>
+    <h1 th:text="#{index.title}">Информация о системе</h1>
+    <p th:text="#{index.description}">Добро пожаловать в нашу систему управления данными. Используйте меню ниже для навигации.</p>
+    
+    <nav>
+        <ul>
+            <li><a th:href="@{/car/list}" href="welcome/car/list" th:text="#{index.cars.link}">Список автомобилей</a></li>
+            <li><a th:href="@{/client/list}" href="welcome/client/list" th:text="#{index.clients.link}">Список клиентов</a></li>
+            <li><a th:href="@{/request/list}" href="welcome/request/list" th:text="#{index.requests.link}">Список запросов</a></li>
+            <li><a th:href="@{/cookies}" href="welcome/cookies" th:text="#{index.cookies.link}">Посмотреть Cookies</a></li>
+        </ul>
+    </nav>
+	<button id="add-car-button" onclick="location.href='welcome/home';">Добавить автомобиль</button>
+</body>
+</html>
