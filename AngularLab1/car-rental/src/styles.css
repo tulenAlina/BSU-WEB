@@ -1,0 +1,103 @@
+body {
+    background-color: #f8f9fa; /* Светлый фон */
+  }
+  
+  .jumbotron {
+    background-color: #007bff; /* Синий фон для jumbotron */
+    color: white; /* Белый текст */
+    padding: 2rem; /* Увеличенный отступ */
+    border-radius: 0.5rem; /* Закругленные углы */
+  }
+  
+  nav {
+    margin: 1rem 0; /* Отступ сверху и снизу для навигации */
+  }
+  
+  nav a {
+    margin-right: 1rem; /* Отступ между ссылками */
+    color: #007bff; /* Цвет ссылок */
+    text-decoration: none; /* Убираем подчеркивание */
+  }
+  
+  nav a:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+  }
+
+form {
+    background-color: #ffffff; /* Белый фон формы */
+    padding: 1.5rem; /* Отступы внутри формы */
+    border-radius: 0.5rem; /* Закругленные углы */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Легкая тень */
+    margin-bottom: 2rem; /* Отступ снизу формы */
+  }
+  
+  form div {
+    margin-bottom: 1rem; /* Отступ между полями ввода */
+  }
+  
+  label {
+    display: block; /* Блок для меток */
+    margin-bottom: 0.5rem; /* Отступ снизу метки */
+    font-weight: bold; /* Жирный шрифт для меток */
+  }
+  
+  input[type="text"],
+  input[type="number"] {
+    width: 100%; /* Полная ширина поля ввода */
+    padding: 0.5rem; /* Отступ внутри поля ввода */
+    border: 1px solid #ced4da; /* Обводка полей */
+    border-radius: 0.25rem; /* Закругленные углы */
+  }
+  
+  button {
+    background-color: #007bff; /* Синий фон для кнопок */
+    color: white; /* Белый текст */
+    border: none; /* Убираем обводку */
+    padding: 0.5rem 1rem; /* Отступы внутри кнопки */
+    border-radius: 0.25rem; /* Закругленные углы */
+    cursor: pointer; /* Курсор в виде указателя */
+  }
+
+  .btn-primary {
+    background-color: #0056b3; /* Цвет для активной кнопки */
+    color: white;
+  }
+  
+  .btn-secondary {
+    background-color: #6c757d; /* Цвет для неактивной кнопки */
+    color: white;
+  }
+  
+  .btn-secondary:hover {
+    background-color: #0056b3; /* Более темный синий при наведении */
+  }
+  
+  .btn-primary:hover {
+    background-color: #007bff; /* Цвет для активной кнопки */
+    color: white;
+  }
+
+  h3 {
+    margin-top: 2rem; /* Отступ сверху для заголовка списка */
+  }
+  
+  ul {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+  }
+  
+  li {
+    display: flex; /* Дисплей в флекс-режиме */
+    justify-content: space-between; /* Распределение элементов */
+    align-items: center; /* Выравнивание по центру */
+    padding: 0.5rem; /* Отступы внутри списка */
+    border-bottom: 1px solid #ced4da; /* Линия между элементами списка */
+  }
+  
+  li button {
+    background-color: #dc3545; /* Красный фон для кнопок удаления */
+  }
+  
+  li button:hover {
+    background-color: #c82333; /* Более темный красный при наведении */
+  }

@@ -1,0 +1,13 @@
+<ul>
+  <li *ngFor="let car of (cars$ | async)" (click)="viewDetails(car.id)">
+    {{ car.model }} - {{ car.state }} - ${{ car.price }}
+  </li>
+</ul>
+
+<div *ngIf="(cars$ | async)?.length === 0 && !loading">
+  <p>Нет автомобилей для отображения.</p>
+</div>
+
+<div *ngIf="loading">
+  <p>Загрузка автомобилей...</p>
+</div>

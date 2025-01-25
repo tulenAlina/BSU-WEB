@@ -1,0 +1,24 @@
+.car-list {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+    margin: 0; /* Убираем внешние отступы */
+}
+
+.car-item {
+    padding: 1rem; /* Отступы внутри элемента списка */
+    margin: 0.5rem 0; /* Вертикальные отступы между элементами */
+    background-color: #f8f9fa; /* Светлый фон для элемента */
+    border: 1px solid #ced4da; /* Светлая граница */
+    border-radius: 0.25rem; /* Закругленные углы */
+    cursor: pointer; /* Курсор в виде указателя */
+    transition: background-color 0.3s, transform 0.2s; /* Плавный переход */
+}
+
+.car-item:hover {
+    background-color: #e2e6ea; /* Цвет фона при наведении */
+    transform: scale(1.02); /* Увеличение при наведении */
+}
+
+.car-item:active {
+    transform: scale(0.98); /* Уменьшение при нажатии */
+}
